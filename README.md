@@ -4,7 +4,7 @@ Project Overview
 
 This project is designed to measure and visualize the expansion of Shape Memory Alloys (SMA) by capturing temperature and displacement data from a thermocouple and a displacement sensor. The data is read through RS232 communication and displayed graphically in real-time.
 
-
+![Screenshot 2024-10-16 165549](https://github.com/user-attachments/assets/46bb7b1d-3a4d-44b3-b051-707a8277172e)
 How It Works
 
 
@@ -108,5 +108,5 @@ Improve data smoothing and filtering for more accurate plots.
 
 Add export options for CSV or Excel formats.
   This project is particularly useful for research and industrial applications involving Shape Memory Alloys, where precise measurement of expansion due to temperature changes is required. It can be modified for various materials and different experimental setups.
-![Screenshot 2024-10-16 165549](https://github.com/user-attachments/assets/46bb7b1d-3a4d-44b3-b051-707a8277172e)
+
 
