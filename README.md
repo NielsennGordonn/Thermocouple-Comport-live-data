@@ -5,28 +5,27 @@ This project is designed to measure and visualize the expansion of Shape Memory 
 
 How It Works
 The system consists of three Python scripts:
-  datat.py: The main script that collects data, logs it to a file, and generates real-time graphs.
-  temp.py: Reads temperature data from the thermocouple via a serial COM port.
-  voltz.py: Reads displacement voltage data from a sensor via another serial COM port.
+  -datat.py: The main script that collects data, logs it to a file, and generates real-time graphs.
+  -temp.py: Reads temperature data from the thermocouple via a serial COM port.
+  -voltz.py: Reads displacement voltage data from a sensor via another serial COM port.
 
 Steps:
-  The user inputs their name, date, and project name via a Tkinter prompt.
-  The user is then prompted to enter the COM ports for the temperature and voltage sensors.
-  The temp.py and voltz.py scripts communicate with the respective sensors over RS232.
-  Data is continuously logged into a .txt file and displayed in real-time using Matplotlib.
-  The program plots temperature vs. displacement (converted from voltage readings).
-  The script allows for user interruption and safely closes serial connections upon termination.
+  -The user inputs their name, date, and project name via a Tkinter prompt.
+  -The user is then prompted to enter the COM ports for the temperature and voltage sensors.
+  -The temp.py and voltz.py scripts communicate with the respective sensors over RS232.
+  -Data is continuously logged into a .txt file and displayed in real-time using Matplotlib.
+  -The program plots temperature vs. displacement (converted from voltage readings).
+  -The script allows for user interruption and safely closes serial connections upon termination.
 
 COM Ports Configuration
-  Since the sensors communicate via RS232, each sensor must be assigned to a COM port. The user is prompted to enter the COM port numbers when running the script. Ensure that:
-  The thermocouple is connected to the correct COM port (e.g., COM10).
-  The displacement sensor is connected to another COM port (e.g., COM9).
-  The correct baud rate (300) and serial settings are configured for both devices.
-  If using USB-to-RS232 adapters, verify their port assignments in the device manager.
+  -Since the sensors communicate via RS232, each sensor must be assigned to a COM port. The user is prompted to enter the COM port numbers when running the script. Ensure that:
+  -The thermocouple is connected to the correct COM port (e.g., COM10).
+  -The displacement sensor is connected to another COM port (e.g., COM9).
+  -The correct baud rate (300) and serial settings are configured for both devices.
+  -If using USB-to-RS232 adapters, verify their port assignments in the device manager.
 
 Hardware Requirements
-
-Thermocouple for temperature measurement
+  Thermocouple for temperature measurement
   Displacement sensor with RS232 output
   Computer with Python installed
   RS232-to-USB adapters (if needed)
