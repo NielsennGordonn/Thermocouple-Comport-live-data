@@ -6,7 +6,9 @@ This project is designed to measure and visualize the expansion of Shape Memory 
 How It Works
 The system consists of three Python scripts:
   -datat.py: The main script that collects data, logs it to a file, and generates real-time graphs.
+  
   -temp.py: Reads temperature data from the thermocouple via a serial COM port.
+  
   -voltz.py: Reads displacement voltage data from a sensor via another serial COM port.
 
 Steps:
